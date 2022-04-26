@@ -24,6 +24,7 @@ contavogal:
 	jal x11, loop
 vogais: .asciz "aeiou"
 imprimir: 
-	
+	addi x19, x19, 48
 	sb x19, 1024(x0)
 	halt
+
