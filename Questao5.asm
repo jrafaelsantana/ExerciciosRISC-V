@@ -1,5 +1,4 @@
 add x19, x0, x0
-lw x18, vogais
 
 loop:
 lb x10, 1025(x0)
@@ -22,7 +21,6 @@ jal x11, loop
 contavogal: 
 	addi x19, x19, 1
 	jal x11, loop
-vogais: .asciz "aeiou"
 imprimir: 
 	addi x19, x19, 48
 	sb x19, 1024(x0)
